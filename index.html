@@ -1,144 +1,139 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Sara Catia Petersen</title>
-    <!-- Google Font -->
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="components.css">
-    <link rel="stylesheet" href="front.css">
-    <link rel="stylesheet" href="light.css" id="theme-css">
-</head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sara Catia Petersen</title>
+
+  <!-- CSS (ligger i roden på GitHub) -->
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="front.css">
+  <link rel="stylesheet" href="light.css" id="theme-css">
+</head>
+
 <body class="page-front">
 
-     <!-- HEADER -->
-    <header class="topbar">
-  <a href="index.html" class="topbar__logo">
-    <img src="/assets/img/sc-logo.webp" alt="Logo">
-  </a>
-</header>
+  <!-- HEADER -->
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo">
+      <img src="sc-logo.webp" alt="Logo">
+    </a>
+  </header>
 
+  <!-- HOVEDINDHOLD -->
+  <main class="main-container">
 
-    <!-- HOVEDINDHOLD -->
-    <main class="main-container">
-        
-          <!-- HERO (første skærm): BILLEDE + NAVN OVENPÅ -->
-  <section class="front-hero" aria-label="Forside hero">
+    <!-- HERO -->
+    <section class="front-hero" aria-label="Forside hero">
+      <div class="image-section" aria-hidden="true">
+        <div class="portrait-frame">
+          <a href="om-mig.html" class="portrait-link" aria-label="Gå til om mig side">
+            <img src="saraprotraet.png" alt="">
+          </a>
+        </div>
+      </div>
 
+      <div class="text-section">
+        <div class="name-container">
+          <div class="name-line first-name">
+            <span class="special-text">
+              SARA
+              <span class="catia-text">CATIA
+                <span class="transparent-effect" aria-hidden="true"></span>
+              </span>
+            </span>
+          </div>
 
-    <div class="image-section" aria-hidden="true">
-      <div class="portrait-frame">
-        <a href="om-mig.html" class="portrait-link" aria-label="Gå til om mig side">
-        <img src="saraprotraet.png" alt="">
+          <div class="name-line last-name">
+            <span class="special-text">
+              PETER
+              <span class="sen-text">SEN
+                <span class="transparent-effect" aria-hidden="true"></span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio-section">
+      <div class="portfolio-title">
+        <h2>PORTFOLIO</h2>
+        <p class="portfolio-intro">
+          Her finder du mine projekter fra 1. semeter på multimediedesigner uddannelsen.
+          Med fokus på web, UX/UI og brugergrænsefladeudvikling.
+        </p>
+      </div>
+
+      <div class="tema-grid">
+        <a href="tema1.html" class="tema-bubble">
+          <div class="tema-number">T01</div>
+          <div class="tema-name">- Introuge</div>
+        </a>
+        <a href="tema2.html" class="tema-bubble">
+          <div class="tema-number">T02</div>
+          <div class="tema-name">- Grundlæggende web</div>
+        </a>
+        <a href="tema3.html" class="tema-bubble">
+          <div class="tema-number">T03</div>
+          <div class="tema-name">- Grundlæggende UX/UI</div>
+        </a>
+        <a href="tema4.html" class="tema-bubble">
+          <div class="tema-number">T04</div>
+          <div class="tema-name">- Brugergrænsefladeudvikling</div>
+        </a>
+        <a href="tema5.html" class="tema-bubble">
+          <div class="tema-number">T05</div>
+          <div class="tema-name">- Grundlæggende indhold</div>
+        </a>
+        <a href="tema6.html" class="tema-bubble">
+          <div class="tema-number">T06</div>
+          <div class="tema-name">- Portfolio Eksamen</div>
         </a>
       </div>
-    </div>
 
-    <!-- TEKST - GÅR IND OVER BILLEDET -->
-    <div class="text-section">
-      <div class="name-container">
-        <div class="name-line first-name">
-          <span class="special-text">
-            SARA
-            <span class="catia-text">CATIA            
-              <span class="transparent-effect" aria-hidden="true"></span>
-            </span>
-          </span>
-        </div>
-
-        <div class="name-line last-name">
-          <span class="special-text">
-            PETER
-            <span class="sen-text">SEN
-              <span class="transparent-effect" aria-hidden="true"></span>
-            </span>
-          </span>
-        </div>
+      <div class="bottom-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-    </div>
-  </section>
-        
-        <!-- PORTFOLIO SEKTION - LANGT NEDE I CENTER -->
-        <section class="portfolio-section">
-            <div class="portfolio-title">
-                <h2>PORTFOLIO</h2>
-                <p class="portfolio-intro">
-                  Her finder du mine projekter fra 1. semeter på multimediedesigner uddannelsen. 
-                  Med fokus på web, UX/UI og brugergrænsefladeudvikling.
-                </p>
-            </div>
-            
-            <!-- TEMA-BOBBLER MED TEKST -->
-            <div class="tema-grid">
-                <a href="tema1.html" class="tema-bubble">
-                    <div class="tema-number">T01</div>
-                    <div class="tema-name">- Introuge</div>
-                </a>
-                <a href="tema2.html" class="tema-bubble">
-                    <div class="tema-number">T02</div>
-                    <div class="tema-name">- Grundlæggende web</div>
-                </a>
-                <a href="tema3.html" class="tema-bubble">
-                    <div class="tema-number">T03</div>
-                    <div class="tema-name">- Grundlæggende UX/UI</div>
-                </a>
-                <a href="tema4.html" class="tema-bubble">
-                    <div class="tema-number">T04</div>
-                    <div class="tema-name">- Brugergrænsefladeudvikling</div>
-                </a>
-                <a href="tema5.html" class="tema-bubble">
-                    <div class="tema-number">T05</div>
-                    <div class="tema-name">-  Grundlæggende indhold</div>
-                </a>
-                <a href="tema6.html" class="tema-bubble">
-                    <div class="tema-number">T06</div>
-                    <div class="tema-name">- Portfolio Eksamen </div>
-                </a>
-            </div>
-            
-            <!-- BUNDLINJER -->
-            <div class="bottom-lines">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </section>
+    </section>
+  </main>
 
-    </main>
+  <!-- SIDEBAR -->
+  <aside class="sidebar is-closed" aria-label="Hovedmenu">
+    <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+    <nav class="menu">
+      <h3 class="menu__title">MENU</h3>
+      <a class="menu__link" href="index.html">FORSIDE</a>
+      <a class="menu__link" href="om-mig.html">OM MIG</a>
+      <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar is-closed" aria-label="Hovedmenu">
-        <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
-        <nav class="menu">
-            <h3 class="menu__title">MENU</h3>
-            <a class="menu__link" href="index.html">FORSIDE</a>
-                       <a class="menu__link" href="om-mig.html">OM MIG</a>
- <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
- <div class="menu__sublinks" aria-label="Portfolio temaer">
-  <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
-  <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
-  <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
-  <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
-  <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
-  <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
-</div>
-        </nav>
-    </aside>
+      <div class="menu__sublinks" aria-label="Portfolio temaer">
+        <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+        <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+        <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+        <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+        <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+        <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+      </div>
+    </nav>
+  </aside>
 
-    <!-- TEMA-SKIFT KNAP -->
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
 
-    <!-- SCRIPTS -->
-    <script src="dom.js"></script>
-    <script src="storage.js"></script>
-    <script src="nav.js"></script>
-    <script src="theme.js"></script>
-    <script src="main.js"></script>
-    <script src="front.js"></script>
+  <!-- JS (ligger i roden på GitHub) -->
+  <script src="dom.js"></script>
+  <script src="storage.js"></script>
+  <script src="nav.js"></script>
+  <script src="theme.js"></script>
+  <script src="main.js"></script>
+  <script src="front.js"></script>
 
 </body>
 </html>
