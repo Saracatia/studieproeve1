@@ -1,0 +1,24 @@
+/* Portfolio undermenu */
+.menu__sublinks{
+  margin-top: 10px;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu__sublink{
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.85;
+  padding: 6px 10px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.menu__sublink:hover{
+  opacity: 1;
+  border-left-color: var(--accent);
+  background: rgba(255, 107, 53, 0.08);
+}

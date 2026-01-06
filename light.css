@@ -1,0 +1,55 @@
+/* Tilføj Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+:root {
+    /* Light theme - RETRO ORANGE */
+    --bg: #f3dbbb;
+    --text: #1a2b5f;
+    --panel: #e8d9c5;
+    --accent: #ff6b35;
+    --line: #ff6b35;
+    --portfolio-color: #1a2b5f;
+    /* ... dine eksisterende variabler ... */
+    --shadow-color: rgba(26, 43, 95, 0.3); /* For light theme */
+    /* eller */
+    --shadow-color: rgba(255, 107, 53, 0.5); /* For dark theme */
+    --transparent-color: rgba(255, 107, 53, 0.3); /* For light theme */
+    
+}
+
+
+body {
+    background: var(--bg);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Alfa Slab One font for navn */
+.name-line {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 400;
+}
+
+/* Orange transparent effect på Catia og sen */
+.transparent-effect {
+    background: var(--transparent-color);
+    mix-blend-mode: multiply;
+}
+
+/* Retro skygge effekter */
+.portrait-frame {
+    box-shadow: 15px 15px 0 var(--shadow-color);
+}
+
+.tema-bubble, .sidebar__toggle, .theme-toggle, .menu__link:hover {
+    box-shadow: 5px 5px 0 var(--shadow-color);
+}
+
+.tema-bubble:hover, .theme-toggle:hover {
+    box-shadow: 8px 8px 0 var(--shadow-color);
+}
+
+/* Portfolio titel med retro look */
+.portfolio-title h2 {
+    text-shadow: 3px 3px 0 var(--shadow-color);
+}

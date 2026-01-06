@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/general.css">
+<link rel="stylesheet" href="../css/typography.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+
+<!-- page -->
+<link rel="stylesheet" href="../css/pages/portfolio.css">
+
+<!-- theme -->
+<link rel="stylesheet" href="../css/themes/light.css" id="theme-css">
+
+</head>
+
+<body class="page-portfolio">
+      <!-- HEADER -->
+    <header class="topbar">
+  <a href="index.html" class="topbar__logo">
+    <img src="../assets/img/sc-logo.webp" alt="Logo">
+  </a>
+</header>
+
+<section class="portfolio-hero" aria-label="Portfolio intro">
+  <h1 class="portfolio-title">PORTFOLIO</h1>
+  <p class="portfolio-subtitle">MMD 1. semester</p>
+
+  <p class="portfolio-intro">
+    Her er mine temaer fra 1. semester. Hvert tema viser: løsning (hvad jeg lavede),
+    proces (hvordan), og læring (hvad jeg tager med videre).
+  </p>
+</section>
+<section class="theme-tree" aria-label="Temaer">
+  <a class="theme-node left" href="tema1.html">
+    <span class="node-label">T01</span>
+    <span class="node-text">Introuge</span>
+  </a>
+
+  <a class="theme-node left" href="tema2.html">
+    <span class="node-label">T02</span>
+    <span class="node-text">Grundlæggende web</span>
+  </a>
+
+  <a class="theme-node left" href="tema3.html">
+    <span class="node-label">T03</span>
+    <span class="node-text">Grundlæggende UX/UI</span>
+  </a>
+
+  <a class="theme-node right" href="tema5.html">
+    <span class="node-label">T05</span>
+    <span class="node-text">Grundlæggende indhold</span>
+  </a>
+
+  <a class="theme-node right" href="tema6.html">
+    <span class="node-label">T06</span>
+    <span class="node-text">Portfolio eksamen</span>
+  </a>
+
+  <!-- “Stamme” + grene -->
+  <div class="tree-stem" aria-hidden="true"></div>
+</section>
+
+    <!-- SIDEBAR - SAMME SOM FORSIDEN -->
+<aside class="sidebar is-closed" aria-label="Hovedmenu">
+  <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+  <nav class="menu">
+    <h3 class="menu__title">MENU</h3>
+    <a class="menu__link" href="index.html">FORSIDE</a>
+    <a class="menu__link" href="om-mig.html">OM MIG</a>
+    <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
+  <div class="menu__sublinks" aria-label="Portfolio temaer">
+  <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+  <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+  <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+  <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+  <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+  <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+</div>
+</nav>
+</aside>
+
+<!-- TEMA - SAMME SOM FORSIDEN -->
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+
+<!--js-->
+    <script src="../js/utils/dom.js"></script>
+<script src="../js/utils/storage.js"></script>
+
+<script src="../js/nav.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/pages/portfolio.js"></script>
+
+</body>
+</html>

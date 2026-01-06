@@ -1,0 +1,90 @@
+.topbar__logo{
+  cursor: pointer;
+  text-decoration: none;
+}
+.topbar__logo img{
+  height: 170px;
+  width: auto;
+}
+
+.tema-container{
+  width: min(1100px, 92vw);
+  margin: 120px auto 80px;
+}
+
+.tema-hero{
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.tema-title{
+  font-family: "Verve", "Alfa Slab One Local", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.tema-section{
+  margin-bottom: 100px;
+}
+
+.tema-heading{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+}
+
+.tema-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.tema-grid.reverse{
+  grid-template-columns: 1fr 1fr;
+}
+
+.tema-text p{
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.tema-image img{
+  width: 100%;
+  border: 3px solid var(--text);
+  box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+/* Mobil */
+@media (max-width: 900px){
+  .tema-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* Gør menu-pilen synlig på tema-sider */
+.sidebar__toggle{
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3001;
+  cursor: pointer;
+  box-shadow: 0 0 0 8px var(--bg), 8px 8px 0 var(--shadow-color);
+}
+
+/* Sørg for at sidebaren ligger over indhold */
+.sidebar{
+  z-index: 4000;
+}

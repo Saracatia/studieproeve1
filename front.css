@@ -1,0 +1,345 @@
+/* ===================== */
+/* GENERELT */
+/* ===================== */
+body{
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ===================== */
+/* ORANGE VERTIKAL PÆL */
+/* ===================== */
+.page-front::after{
+  content:"";
+  position: fixed;
+  top: 48px;
+  right: 32px;
+  width: 30px;
+  height: calc(100vh - 48px);
+  background: var(--accent);
+  z-index: 500;
+  pointer-events: none;
+}
+
+/* ===================== */
+/* TOPBAR */
+/* ===================== */
+.topbar{
+  height: 48px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar__logo{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/* LOGO FIX */
+.topbar__logo img{
+  height: 170px;
+  width: auto;
+  display: block;
+}
+
+/* ===================== */
+/* LAYOUT FIX (vigtig) */
+/* ===================== */
+.page-front .main-container{
+  display: block;
+  margin-top: 48px;
+}
+
+/* ===================== */
+/* HERO */
+/* ===================== */
+.front-hero{
+  position: relative;
+  min-height: calc(100vh - 48px);
+  overflow: hidden;
+}
+
+/* ===================== */
+/* BILLEDE */
+/* ===================== */
+.image-section{
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8vw;
+}
+
+/* MERE FIRKANTET + LUFT I TOPPEN */
+.portrait-frame{
+  width: 920px;
+  height: 920px;
+
+  margin-top: 40px;       /* luft i toppen */
+  overflow: hidden;
+
+  background: var(--panel);
+  border: 3px solid var(--text);
+  box-shadow: 18px 18px 0 var(--shadow-color);
+}
+
+.portrait-frame img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.portrait-link{
+  display: block;
+  cursor: pointer;
+}
+
+.portrait-link img{
+  display: block;
+}
+
+
+/* ===================== */
+/* TEKST OVER BILLEDE */
+/* ===================== */
+.text-section{
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8vw;
+}
+
+.name-line,
+.portfolio-title h2{
+  font-family: "Alfa Slab One Local", serif;
+  font-weight: 400;
+}
+
+.first-name{
+  font-size: 8.5rem;
+  line-height: 0.9;
+}
+
+.last-name{
+  font-size: 9.5rem;
+  line-height: 0.9;
+}
+
+/* SLUK AL FARVELAG */
+.transparent-effect{
+  display: none;
+}
+
+/* ===================== */
+/* PORTFOLIO */
+/* ===================== */
+.portfolio-section{
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+/* PORTFOLIO headline */
+.portfolio-title{
+  font-family: "Cream Cheese", serif;
+  font-size: 6rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-transform: none;
+}
+.page-front .portfolio-title h2{
+  color: var(--portfolio-color);
+}
+
+
+
+.portfolio-intro{
+  max-width: 680px;
+  margin: 22px auto 56px;
+
+  font-family: "Milky Vintage", system-ui, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.85;
+
+  text-align: center;
+}
+
+
+/* Lille accent (valgfrit men lækkert) */
+.portfolio-intro::after{
+  content:"";
+  display:block;
+  width: 90px;
+  height: 3px;
+  background: var(--accent);
+  margin: 18px auto 0;
+}
+
+
+
+/* ===================== */
+/* TEMA-BOBBLER */
+/* ===================== */
+.tema-grid{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  gap: 56px;
+  max-width: min(1000px, 92vw);
+  margin: 0 auto 80px;
+  justify-items: center;
+  align-items: center;
+}
+/* T05 + T06 i midten (række 2, kolonne 2 og 3) */
+.tema-bubble:nth-child(5){ grid-column: 2; }
+.tema-bubble:nth-child(6){ grid-column: 3; }
+
+
+.tema-bubble{
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 3px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+
+  box-shadow: 12px 12px 0 var(--shadow-color);
+  text-align: center;
+}
+
+.tema-number{
+  font-size: 2rem;
+  font-weight: 900;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.tema-number::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:0;
+  width:60px;
+  height:4px;
+  background: var(--text);
+}
+
+.tema-name{
+  max-width: 170px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.15;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+
+/* ===================== */
+/* SIDEBAR / MENU-PIL */
+/* ===================== */
+/* SIDEBAR / MENU-PIL (synlig + pop) */
+.page-front .sidebar__toggle{
+  position: absolute;          /* VIGTIG */
+  top: 50%;
+  left: -32px;                 /* hænger udenfor sidebaren */
+  transform: translateY(-50%); /* centrerer den på højden */
+
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;             /* større pil */
+  color: var(--text);
+
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--text);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3001;
+  cursor: pointer;
+
+  box-shadow:
+    0 0 0 8px var(--bg),       /* halo så den popper fra pælen */
+    8px 8px 0 var(--shadow-color);
+
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.page-front .sidebar__toggle:hover{
+  transform: translateY(-50%) translate(-3px, -3px);
+  box-shadow:
+    0 0 0 8px var(--bg),
+    12px 12px 0 var(--shadow-color);
+}
+
+
+
+
+/* ===================== */
+/* MOBIL */
+/* ===================== */
+@media (max-width: 900px){
+  .image-section{
+    position: relative;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .portrait-frame{
+    width: 80vw;
+    margin-top: 40px;
+  }
+
+  .text-section{
+    position: relative;
+    padding: 40px 6vw;
+  }
+
+  .first-name{ font-size: 4.5rem; }
+  .last-name{ font-size: 5.2rem; }
+
+  .tema-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 900px){
+  .tema-grid{ grid-template-columns: repeat(2, 1fr); }
+  .tema-bubble:nth-child(5),
+  .tema-bubble:nth-child(6){ grid-column: auto; }
+}
+
+}
+/* Gør så klik kan ramme billed-linket selvom teksten ligger ovenpå */
+.page-front .text-section{
+  pointer-events: none;
+}

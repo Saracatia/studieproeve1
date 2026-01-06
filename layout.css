@@ -1,0 +1,531 @@
+/* FRONT PAGE - SOM CARLA OLIVEIRA REFERENCE */
+.hero{
+  display:grid;
+  grid-template-columns: 1fr 260px;
+  gap: 48px;
+  align-items: start;
+  padding-top: 32px;
+  margin-bottom: 56px;
+}
+.hero_name{
+  margin: 0;
+  line-height: 1.05;
+}
+.hero_name span:nth-child(2){
+  color: var(--pink);
+}
+/* Portfolio-område */
+.front-title{
+  margin-top: 0px; 
+}
+
+.tema-grid{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  /* så boblerne sidder mere "samlet" som i dit design */
+  justify-content: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.tema-bubble{
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.tema-bubble{
+  width: 110px;
+  height: 110px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 999px;
+  text-decoration:none;
+}
+
+.front-footer{ margin-top: 40px; }
+.front-footer__lines{ height: 40px; }
+
+/* RESET OG GRUNDLÆGGENDE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; /* Federe font som reference */
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    letter-spacing: -0.5px; /* Mindre mellemrum mellem bogstaver */
+}
+
+/* TOPBAR */
+.topbar {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    z-index: 100;
+}
+
+/* HOVEDCONTAINER: Som referencebilledet */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 48px);
+    position: relative;
+    align-items: center; /* Centrer vertikalt */
+}
+
+/* VENSTRE TEKST-SEKTION - CENTRERET SOM REFERENCE */
+.text-section {
+    flex: 1;
+    padding: 0 60px 0 120px; /* Mere luft på venstre side */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+    height: calc(100vh - 48px);
+    justify-content: center; /* Centrer vertikalt */
+}
+
+/* NAVN-KONTAINER - STIL SOM CARLA OLIVEIRA */
+.name-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 60;
+}
+
+.first-name {
+    font-size: 6rem; /* Større */
+    font-weight: 900; /* Meget fed */
+    line-height: 0.8; /* Tættere linjeafstand */
+    color: var(--text);
+    margin-bottom: 0;
+    letter-spacing: -3px; /* Mindre mellemrum */
+    position: relative;
+    z-index: 70;
+    text-transform: uppercase; /* Store bogstaver som reference */
+}
+
+.last-name {
+    font-size: 7rem; /* Større */
+    font-weight: 900; /* Meget fed */
+    line-height: 0.8; /* Tættere linjeafstand */
+    color: var(--text);
+    margin-top: 5px;
+    letter-spacing: -3px; /* Mindre mellemrum */
+    position: relative;
+    z-index: 70;
+    text-transform: uppercase; /* Store bogstaver som reference */
+}
+
+/* PORTFOLIO TITEL - CENTRERET OG STOR */
+.portfolio-title {
+    margin-top: 10vh; /* Mindre nede for at være mere synlig */
+    position: relative;
+    z-index: 50;
+    padding-bottom: 20px;
+}
+
+.portfolio-title h2 {
+    font-size: 9rem; /* Meget større */
+    font-weight: 900;
+    color: var(--pink-accent);
+    margin: 20px 0 60px 0;
+    letter-spacing: -4px; /* Mindre mellemrum */
+    line-height: 0.7; /* Meget tæt */
+    text-transform: uppercase;
+}
+
+/* TEMA-BOBBLER GRID - CENTRERET */
+.tema-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 25px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 50;
+}
+
+.tema-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px; /* Lidt større */
+    height: 110px; /* Lidt større */
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    font-weight: 900;
+    font-size: 1.8rem; /* Større tekst */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 50;
+}
+
+.tema-bubble:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Positioner de enkelte bobler som i reference */
+.tema-bubble:nth-child(1) { grid-column: 1; grid-row: 1; }
+.tema-bubble:nth-child(2) { grid-column: 2; grid-row: 1; }
+.tema-bubble:nth-child(3) { grid-column: 3; grid-row: 1; }
+.tema-bubble:nth-child(4) { grid-column: 4; grid-row: 1; }
+.tema-bubble:nth-child(5) { 
+    grid-column: 2; 
+    grid-row: 2; 
+    justify-self: start;
+    margin-left: 60px;
+}
+
+
+
+.note-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--text);
+    opacity: 0.6;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+/* HØJRE BILLEDE-SEKTION - GÅR BAG TEKSTEN */
+.image-section {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+    z-index: 40;
+    height: calc(100vh - 48px);
+}
+
+/* PORTRAIT-FRAME - STORT OG GÅR BAG TEKSTEN */
+.portrait-frame {
+    width: 110%; /* Bredere end containeren */
+    max-width: none; /* Fjern max-width */
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border: none; /* Ingen border */
+    box-shadow: none; /* Ingen skygge */
+    background: transparent;
+    position: relative;
+    z-index: 40;
+    margin-left: -15%; /* Går ind over tekstområdet */
+    height: 100%; /* Fyld højden */
+}
+
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    filter: brightness(1.05) contrast(1.1); /* Lidt lysere */
+}
+
+/* SIDEBAR - OVEN OVER ALT */
+.sidebar {
+    position: fixed;
+    top: 48px;
+    right: 0;
+    height: calc(100vh - 48px);
+    width: 280px;
+    background: var(--panel);
+    display: flex;
+    align-items: center;        /* vertikalt centreret */
+    justify-content: center;    /* horisontalt centreret */
+
+    z-index: 2000;
+    padding: 30px 20px;
+    transform: translateX(100%);
+    transition: transform 350ms cubic-bezier(.2,.8,.2,1);
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+}
+
+.sidebar:not(.is-closed) {
+    transform: translateX(0);
+}
+
+.sidebar__toggle {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: rgb(25, 21, 103);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 3000;
+}
+/* ===== Portfolio undermenu i sidebar ===== */
+
+/* container */
+.menu__sublinks{
+  margin: 6px 0 14px;                 /* luft under PORTFOLIO */
+  padding: 10px 0 0;
+  border-top: 2px solid color-mix(in srgb, var(--text) 18%, transparent);
+  display: grid;
+  gap: 8px;
+}
+
+/* links */
+.menu__sublink{
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.85;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: left;                   /* ✅ vigtig */
+  transition: background 0.2s, opacity 0.2s;
+}
+
+/* lille “T01 …” føles som sekundært */
+.menu__sublink:hover{
+  background: rgba(6, 3, 100, 0.05);
+  opacity: 1;
+}
+
+.menu__title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--text);
+    text-align: center;
+}
+
+.menu__link {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    text-decoration: none;
+    color: var(--text);
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.menu__link:hover {
+    background: rgba(6, 3, 100, 0.05);
+}
+
+/* TEMA-SKIFT KNAP */
+.theme-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 3000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVT DESIGN */
+@media (max-width: 1400px) {
+    .first-name {
+        font-size: 5rem;
+    }
+    
+    .last-name {
+        font-size: 6rem;
+    }
+    
+    .portfolio-title h2 {
+        font-size: 7.5rem;
+    }
+    
+    .portrait-frame {
+        margin-left: -10%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-section {
+        padding: 0 40px 0 80px;
+    }
+    
+    .first-name {
+        font-size: 4.5rem;
+    }
+    
+    .last-name {
+        font-size: 5.5rem;
+    }
+    
+    .portfolio-title h2 {
+        font-size: 6.5rem;
+    }
+    
+    .tema-bubble {
+        width: 95px;
+        height: 95px;
+        font-size: 1.5rem;
+    }
+    
+    .portrait-frame {
+        margin-left: -8%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .text-section {
+        order: 2;
+        padding: 40px 30px;
+        height: auto;
+        justify-content: flex-start;
+    }
+    
+    .image-section {
+        order: 1;
+        flex: 0 0 auto;
+        padding: 0;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    .portrait-frame {
+        max-width: 100%;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .first-name {
+        font-size: 4rem;
+    }
+    
+    .last-name {
+        font-size: 5rem;
+    }
+    
+    .portfolio-title {
+        margin-top: 5vh;
+    }
+    
+    .portfolio-title h2 {
+        font-size: 5.5rem;
+        margin: 20px 0 40px 0;
+    }
+    
+    .tema-grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section {
+        padding: 40px 20px;
+    }
+    
+    .first-name {
+        font-size: 3.5rem;
+    }
+    
+    .last-name {
+        font-size: 4.5rem;
+    }
+    
+    .portfolio-title h2 {
+        font-size: 4.5rem;
+    }
+    
+    .tema-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .tema-bubble {
+        width: 80px;
+        height: 80px;
+        font-size: 1.3rem;
+    }
+    
+    .tema-bubble:nth-child(4) { 
+        grid-column: 1; 
+        grid-row: 2; 
+    }
+    
+    .tema-bubble:nth-child(5) { 
+        grid-column: 2; 
+        grid-row: 2; 
+        justify-self: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-name {
+        font-size: 2.8rem;
+    }
+    
+    .last-name {
+        font-size: 3.5rem;
+    }
+    
+    .portfolio-title h2 {
+        font-size: 3.5rem;
+    }
+    
+    .tema-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+    }
+    
+    .tema-bubble:nth-child(3) { 
+        grid-column: 1; 
+        grid-row: 2; 
+    }
+    
+    .tema-bubble:nth-child(4) { 
+        grid-column: 2; 
+        grid-row: 2; 
+    }
+    
+    .tema-bubble:nth-child(5) { 
+        grid-column: 1; 
+        grid-row: 3; 
+        justify-self: center;
+    }
+}

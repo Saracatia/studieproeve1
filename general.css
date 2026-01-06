@@ -1,0 +1,24 @@
+@font-face{
+  font-family: "Alfa Slab One Local";
+  src: url("../assets/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+
+img { max-width: 100%; display: block; }
+
+body { margin: 0; }
+
+@font-face{
+  font-family: "Verve";
+  src: url("../assets/fonts/verve/Verve.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+

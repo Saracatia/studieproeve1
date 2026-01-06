@@ -1,0 +1,113 @@
+/* Tilføj Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+:root {
+    /* Dark theme - RETRO ELECTRIC BLUE/ORANGE */
+    --bg: #0a0f2b;          /* Mørkeblå baggrund */
+    --text: #ffffff;        /* Hvid tekst */
+    --panel: #1a2342;       /* Mørk blå panel */
+    --accent: #ff6b35;      /* Pang orange accent */
+    --line: #4a9fff;        /* Elektrisk blå linjer */
+    --portfolio-color: #ffffff; /* Hvid til Portfolio */
+    /* ... dine eksisterende variabler ... */
+    --shadow-color: rgba(26, 43, 95, 0.3); /* For light theme */
+    /* eller */
+    --shadow-color: rgba(255, 107, 53, 0.5); /* For dark theme */
+    --transparent-color: rgba(255, 107, 53, 0.3); /* For light theme */
+    /* eller */
+    --transparent-color: rgba(74, 159, 255, 0.3); /* For dark theme */
+}
+
+
+body {
+    background: var(--bg);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Alfa Slab One font for navn */
+.name-line {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 400;
+}
+
+/* Elektrisk blå transparent effect på Catia og sen */
+.transparent-effect {
+    background: var(--transparent-color);
+    mix-blend-mode: screen;
+}
+
+/* Retro neon skygge effekter */
+.portrait-frame {
+    box-shadow: 
+        15px 15px 0 var(--shadow-color),
+        0 0 20px rgba(74, 159, 255, 0.3);
+    border-color: #4a9fff;
+}
+
+.tema-bubble, .sidebar__toggle, .theme-toggle, .menu__link:hover {
+    box-shadow: 
+        5px 5px 0 var(--shadow-color),
+        0 0 10px rgba(74, 159, 255, 0.2);
+    border-color: #4a9fff;
+}
+
+.tema-bubble:hover, .theme-toggle:hover {
+    box-shadow: 
+        8px 8px 0 var(--shadow-color),
+        0 0 15px rgba(74, 159, 255, 0.3);
+}
+
+/* Menu items med elektrisk look */
+.menu__link {
+    border-color: #4a9fff;
+    background: rgba(26, 35, 66, 0.8);
+}
+
+.menu__link:hover {
+    background: #ff6b35;
+    color: #0a0f2b;
+}
+
+/* Portfolio titel med neon retro look */
+.portfolio-title h2 {
+    text-shadow: 
+        3px 3px 0 var(--shadow-color),
+        0 0 10px rgba(74, 159, 255, 0.5);
+        
+--portfolio-color: var(--accent); /* = din orange */
+}
+
+/* Topbar med elektrisk accent */
+.topbar {
+    border-bottom-color: #4a9fff;
+    box-shadow: 0 0 10px rgba(74, 159, 255, 0.2);
+}
+
+/* Sidebar med elektrisk kant */
+.sidebar {
+    border-left-color: #4a9fff;
+    box-shadow: -5px 0 20px rgba(74, 159, 255, 0.1);
+}
+
+/* Tema bobler med retro elektrisk look */
+.tema-bubble {
+    background: #1a2342;
+    color: #4a9fff;
+}
+
+.tema-bubble:hover {
+    background: #ff6b35;
+    color: #0a0f2b;
+}
+
+/* Knapper med elektrisk look */
+.theme-toggle, .sidebar__toggle {
+    background: #1a2342;
+    color: #4a9fff;
+}
+
+.theme-toggle:hover, .sidebar__toggle:hover {
+    background: #ff6b35;
+    color: #0a0f2b;
+}

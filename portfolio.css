@@ -1,0 +1,150 @@
+.topbar__logo{
+  cursor: pointer;
+  text-decoration: none;
+}
+.topbar__logo img{
+  height: 170px;
+  width: auto;
+}
+.page-portfolio .portfolio-hero{
+  width: min(1100px, 92vw);
+  margin: 110px auto 40px; /* plads til topbar + luft */
+  text-align: center;
+}
+
+.page-portfolio .portfolio-title{
+  font-family: "Verve", "Alfa Slab One Local", serif;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  letter-spacing: 0.04em;
+  margin: 0 0 8px;
+}
+
+.page-portfolio .portfolio-subtitle{
+  margin: 0 0 18px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.page-portfolio .portfolio-intro{
+  max-width: 70ch;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+.page-portfolio .theme-tree{
+  width: min(1100px, 92vw);
+  margin: 30px auto 80px;
+  position: relative;
+  min-height: 560px;
+}
+
+/* Stammen */
+.page-portfolio .tree-stem{
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  bottom: 60px;
+  width: 4px;
+  transform: translateX(-50%);
+  background: var(--text);
+  opacity: 0.9;
+}
+
+/* Noder (bubbles) */
+.page-portfolio .theme-node{
+  position: absolute;
+  width: 240px;
+  height: 130px;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 3px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  display: grid;
+  place-content: center;
+  gap: 6px;
+  text-align: center;
+  box-shadow: 12px 12px 0 var(--shadow-color);
+}
+
+/* Gren-linje fra node til stamme */
+.page-portfolio .theme-node::after{
+  content:"";
+  position:absolute;
+  top: 50%;
+  width: 140px;
+  height: 4px;
+  background: var(--text);
+  transform: translateY(-50%);
+}
+
+.page-portfolio .theme-node.left::after{
+  right: -140px;
+}
+
+.page-portfolio .theme-node.right::after{
+  left: -140px;
+}
+
+/* Placeringer (justér roligt efter smag) */
+.page-portfolio .theme-node.left:nth-of-type(1){ left: 8%;  top: 90px; }
+.page-portfolio .theme-node.left:nth-of-type(2){ left: 8%;  top: 260px; }
+.page-portfolio .theme-node.left:nth-of-type(3){ left: 8%;  top: 430px; }
+
+.page-portfolio .theme-node.right:nth-of-type(4){ right: 8%; top: 190px; }
+.page-portfolio .theme-node.right:nth-of-type(5){ right: 8%; top: 360px; }
+
+.page-portfolio .node-label{
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.page-portfolio .node-text{
+  font-weight: 800;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* Mobil: lav det til en simpel liste */
+@media (max-width: 900px){
+  .page-portfolio .theme-tree{
+    min-height: auto;
+  }
+  .page-portfolio .tree-stem{
+    display:none;
+  }
+  .page-portfolio .theme-node{
+    position: static;
+    width: 100%;
+    max-width: 520px;
+    margin: 18px auto;
+  }
+  .page-portfolio .theme-node::after{
+    display:none;
+  }
+}
+/* Gør menu-pilen synlig på portfolio */
+.page-portfolio .sidebar__toggle{
+  position: absolute;
+  top: 50%;
+  left: -32px;                 /* hænger udenfor sidebaren */
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3001;
+  cursor: pointer;
+  box-shadow: 0 0 0 8px var(--bg), 8px 8px 0 var(--shadow-color);
+}
+
+/* bare så den altid ligger over dit “træ” */
+.page-portfolio .sidebar{
+  z-index: 4000;
+}

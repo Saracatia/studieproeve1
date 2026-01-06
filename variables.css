@@ -1,0 +1,11 @@
+:root{
+  /* Light theme (default) - RETRO ORANGE/YELLOW */
+  --bg: #f5e6d3;           /* Varm beige baggrund */
+  --text: #1a2b5f;         /* Mørkeblå tekst */
+  --panel: #e8d9c5;        /* Lysere panel */
+  --accent: #ff6b35;       /* Orange accent (pang orange) */
+  --line: #1a2b5f;         /* Mørkeblå linjer */
+  --portfolio-color: #1a2b5f; /* Mørkeblå til Portfolio */
+  --transparent-color: rgba(255, 107, 53, 0.3); /* Orange transparent */
+  --shadow-color: rgba(26, 43, 95, 0.3); /* Skygge farve */
+}

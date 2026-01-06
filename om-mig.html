@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om mig - Sara Catia Petersen</title>
+
+  <!-- SAMME CSS SOM FORSIDEN -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/front.css"> <!-- Bruger front.css! -->
+  <link rel="stylesheet" href="../css/pages/om-mig.css"> <!-- Til resten af siden -->
+
+  <!-- Tema -->
+  <link rel="stylesheet" href="../css/themes/light.css" id="theme-css">
+</head>
+
+<body class="page-om-mig">
+
+     <!-- HEADER -->
+    <header class="topbar">
+  <a href="index.html" class="topbar__logo">
+    <img src="../assets/img/sc-logo.webp" alt="Logo">
+  </a>
+</header>
+
+
+    <!-- HOVEDINDHOLD -->
+    <main class="main-container">
+        
+       
+  <section class="front-hero" aria-label="Forside hero">
+ 
+    <div class="image-section" aria-hidden="true">
+      <div class="portrait-frame">
+        <img src="../assets/img/saraprotraet.png" alt="">
+      </div>
+    </div>
+
+    <!-- TEKST - GÅR IND OVER BILLEDET -->
+    <div class="text-section">
+      <div class="name-container">
+        <div class="name-line first-name">
+          <span class="special-text">
+            SARA
+            <span class="catia-text">CATIA            
+              <span class="transparent-effect" aria-hidden="true"></span>
+            </span>
+          </span>
+        </div>
+
+        <div class="name-line last-name">
+          <span class="special-text">
+            PETER
+            <span class="sen-text">SEN
+              <span class="transparent-effect" aria-hidden="true"></span>
+            </span>
+          </span>
+        </div>
+      </div><!-- LILLE "OM MIG" TEKST UNDER NAVNET -->
+        <div class="om-mig-preview">
+          <div class="preview-card">
+            <p class="preview-text">
+              Mit navn er Sara Catia, jeg er 22 år gammel og jeg bor i København. 
+              Jeg er multimediedesignerstuderende med interesse for digitalt design, 
+              visuel identitet og brugeroplevelser.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+        
+    </section>
+    
+    <!-- SVG OPDELER -->
+    <div class="page-divider">
+      <img src="../assets/icons/side2.svg" alt="Sidedeler" class="divider-svg">
+    </div>
+    
+    <!-- OM MIG INDHOLD UNDER -->
+    <section class="om-mig-content-section">
+      <div class="content-wrapper">
+        
+        <!-- REJSE KORT -->
+        <div class="content-card journey-card">
+          <h2 class="content-title">Min rejse på 1. semester</h2>
+          <div class="text-content">
+            <p>
+              Jeg er multimediedesignstuderende på 1. semester med interesse for digitalt design, 
+              visuel identitet og brugeroplevelse. Jeg arbejder med bevidste designvalg og har fokus 
+              på overblik, tydelig navigation og brugervenlige løsninger.
+            </p>
+            <p>
+              Gennem mit studie har jeg arbejdet med både kreative og tekniske processer – 
+              fra idé og research til design, test og kodning.
+            </p>
+            <p>
+              Jeg kan godt lide at arbejde med stærke farvekontraster, typografi og interaktioner, 
+              men jeg prioriterer stadig overblik og navigation.
+            </p>
+          </div>
+        </div>
+        
+        <!-- ERFARING KORT -->
+        <div class="content-card experience-card">
+          <h2 class="content-title">Erfaring</h2>
+          
+          <!-- CV-CAROUSEL -->
+          <div class="cv-carousel" aria-label="CV tidslinje" data-cv>
+            <button class="cv-carousel__btn cv-carousel__btn--prev" type="button" aria-label="Forrige erfaring">
+              ‹
+            </button>
+
+            <div class="cv-carousel__card" role="group" aria-live="polite">
+              <div class="cv-carousel__dot" data-cv-dot>01</div>
+
+              <div class="cv-carousel__content">
+                <div class="cv-carousel__meta" data-cv-meta>AUG 2020 – JUN 2023</div>
+                <div class="cv-carousel__title" data-cv-title>Roskilde Handelsskole</div>
+                <p class="cv-carousel__desc" data-cv-desc>
+                  Uddannelse. Jeg lærte grundlæggende forretningsforståelse og kommunikation.
+                </p>
+              </div>
+            </div>
+
+            <button class="cv-carousel__btn cv-carousel__btn--next" type="button" aria-label="Næste erfaring">
+              ›
+            </button>
+          </div>
+
+          <div class="cv-carousel__counter" aria-hidden="true">
+            <span data-cv-count>1 / 9</span>
+          </div>
+        </div>
+        <div class="content-card education-card">
+  <h2 class="content-title">Uddannelse</h2>
+
+  <div class="cv-carousel" aria-label="Uddannelse tidslinje" data-edu>
+    <button class="cv-carousel__btn cv-carousel__btn--prev" type="button" aria-label="Forrige uddannelse" data-edu-prev>‹</button>
+
+    <div class="cv-carousel__card" role="group" aria-live="polite">
+      <div class="cv-carousel__dot" data-edu-dot>01</div>
+
+      <div class="cv-carousel__content">
+        <div class="cv-carousel__meta" data-edu-meta>—</div>
+        <div class="cv-carousel__title" data-edu-title>—</div>
+        <p class="cv-carousel__desc" data-edu-desc>—</p>
+      </div>
+    </div>
+
+    <button class="cv-carousel__btn cv-carousel__btn--next" type="button" aria-label="Næste uddannelse" data-edu-next>›</button>
+  </div>
+
+  <div class="cv-carousel__counter" aria-hidden="true">
+    <span data-edu-count>1 / 3</span>
+  </div>
+</div>
+
+        
+        <!-- REFLEKSION KORT -->
+        <div class="content-card reflection-card">
+          <h2 class="content-title">Refleksion</h2>
+          <div class="text-content">
+            <p>
+              På 1. semester har jeg især lært at gøre designvalg bevidste og kunne argumentere for dem.
+              Jeg har også lært, hvor meget navigation og tydelige klik-flader betyder for oplevelsen – 
+              og at test tidligt kan afsløre små ting der kan forbedre brugeroplevelsen markant.
+            </p>
+            <p>
+              Jeg ser frem til at udvikle mine færdigheder yderligere på de kommende semestre og 
+              arbejde med endnu mere avancerede projekter.
+            </p>
+          </div>
+        </div>
+    
+
+  </main>
+
+  <!-- SIDEBAR - SAMME SOM FORSIDEN -->
+  <aside class="sidebar is-closed" aria-label="Hovedmenu">
+    <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+    <nav class="menu">
+      <h3 class="menu__title">MENU</h3>
+      <a class="menu__link" href="index.html">FORSIDE</a>
+           <a class="menu__link" href="om-mig.html">OM MIG</a>
+ <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
+<div class="menu__sublinks" aria-label="Portfolio temaer">
+  <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+  <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+  <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+  <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+  <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+  <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+</div>
+    </nav>
+  </aside>
+
+  <!-- TEMA - SAMME SOM FORSIDEN -->
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+
+  <!-- Scripts -->
+  <script src="../js/nav.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/pages/om-mig.js"></script>
+</body>
+</html>

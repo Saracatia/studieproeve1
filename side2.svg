@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1366 768">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Sommer);
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <radialGradient id="Sommer" cx="683" cy="224.49" fx="683" fy="224.49" r="499.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".09" stop-color="#ffecd8"/>
+      <stop offset=".21" stop-color="#ffd4a7"/>
+      <stop offset=".33" stop-color="#ffc07d"/>
+      <stop offset=".46" stop-color="#ffb05a"/>
+      <stop offset=".59" stop-color="#ffa340"/>
+      <stop offset=".72" stop-color="#ff9a2d"/>
+      <stop offset=".86" stop-color="#ff9421"/>
+      <stop offset="1" stop-color="#ff931e"/>
+    </radialGradient>
+  </defs>
+  <path class="st0" d="M177.34,225.54C39.65,186.2,10.14,169.86,11.57,162.44c3.52-18.26,199.11-6.21,383.72,24.64,223.84,37.41,367.93,91.84,393.59,47.44,19.34-33.47-49.96-86.1-29.49-117.95,27.04-42.07,194.24-22.33,284.62,76.92,55.49,60.94,64.37,132.47,88.46,129.49,34.48-4.27,22.25-151.59,82.05-170.51,42.44-13.43,86.04,48.91,128.21,28.21,21.09-10.36,35.31-38.29,29.08-46.15-24.6-31-325.98,302.65-561.13,229.49-115.48-35.93-103.9-135.41-291.03-226.92-109.2-53.4-250.33-86.62-282.05-41.34-31.19,44.52,70.42,126.34,38.46,192.62-39.43,81.77-251.45,76.15-264.53,33.33-13.77-45.06,197.62-115.79,182.48-176.92-10.5-42.42-128.98-75.77-178.21-26.92-7.8,7.74-19.98,23.62-23.08,53.85"/>
+  <path d="M-22.05,746.76c1.93,0,1.93-3,0-3s-1.93,3,0,3h0Z"/>
+</svg>

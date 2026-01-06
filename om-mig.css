@@ -1,0 +1,510 @@
+/* ===== OM MIG SIDE ===== */
+
+/* logo*/
+.page-om-mig .topbar__logo img {
+    height: 170px !important; /* Mindre end forside */
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+/* OVERSKRIFTER TIL AT MATCHE FORSIDEN */
+.page-om-mig .name-line {
+    font-family: "Alfa Slab One Local", serif;
+    font-weight: 400;
+}
+
+.page-om-mig .first-name {
+    font-size: 8.5rem;
+    line-height: 0.9;
+}
+
+.page-om-mig .last-name {
+    font-size: 9.5rem;
+    line-height: 0.9;
+}
+
+/* LILLE "OM MIG" TEKST UNDER NAVNET */
+.om-mig-preview {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+
+.preview-text {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    opacity: 0.92;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.page-om-mig .page-divider{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: auto;            /* ✅ */
+  overflow: visible;       /* (valgfri) */
+}
+
+.page-om-mig .page-divider > img.divider-svg{
+  display:block;
+  width: 100%;
+  height: auto !important; /* ✅ */
+}
+
+
+
+
+
+/* OM MIG INDHOLD SEKTION (under divider) */
+.om-mig-content-section {
+    width: 100%;
+    background: var(--bg);
+    padding: 40px 0 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.content-wrapper {
+    width: min(1200px, 92vw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+
+
+.content-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 18px 18px 0 var(--shadow-color);
+}
+
+/* Spred kortene ud på grid */
+.journey-card {
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.experience-card {
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+.education-card {
+    grid-column: 1/span 2;
+    grid-row: 3;
+    margin-top: 40px;
+}
+.reflection-card {
+    grid-column: 1/span 2;
+    grid-row: 4;
+    margin-top: 40px;
+}
+
+
+
+/* Title styling */
+.content-title {
+    font-family: "Alfa Slab One Local", serif;
+    font-size: 2.5rem;
+    color: var(--text);
+    margin: 0 0 25px 0;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--accent);
+}
+
+/* Text content */
+.text-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    opacity: 0.92;
+}
+
+.text-content p {
+    margin: 0 0 20px 0;
+}
+
+.text-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* CV Carousel */
+.cv-carousel {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    gap: 25px;
+    align-items: center;
+    margin: 25px 0 15px;
+}
+
+.cv-carousel__btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    background: var(--accent);
+    border: 3px solid var(--text);
+    color: var(--text);
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 0 var(--shadow-color);
+    transition: all 0.2s ease;
+}
+
+.cv-carousel__btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 11px 11px 0 var(--shadow-color);
+}
+
+.cv-carousel__card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 25px;
+    align-items: center;
+    border: 3px solid var(--text);
+    background: var(--panel);
+    padding: 25px;
+    box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+.cv-carousel__dot {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    background: var(--accent);
+    border: 3px solid var(--text);
+    box-shadow: 8px 8px 0 var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: var(--text);
+    font-size: 1.8rem;
+}
+
+.cv-carousel__meta {
+    font-size: 1rem;
+    opacity: 0.75;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.cv-carousel__title {
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.cv-carousel__desc {
+    margin: 0;
+    line-height: 1.65;
+    opacity: 0.92;
+    font-size: 1.05rem;
+}
+
+.cv-carousel__counter {
+    opacity: 0.75;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px 0 0;
+    font-weight: 600;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-name {
+    width: 160px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.skill-level {
+    flex: 1;
+    height: 20px;
+    background: rgba(26, 43, 95, 0.1);
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 8px;
+    transition: width 1s ease;
+}
+
+/* Sidebar toggle på om-mig siden */
+.page-om-mig .sidebar__toggle {
+    position: absolute;
+    top: 50%;
+    left: -32px;
+    transform: translateY(-50%);
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    color: var(--text);
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3001;
+    cursor: pointer;
+    box-shadow: 0 0 0 8px var(--bg), 8px 8px 0 var(--shadow-color);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.page-om-mig .sidebar__toggle:hover {
+    transform: translateY(-50%) translate(-3px, -3px);
+    box-shadow: 0 0 0 8px var(--bg), 12px 12px 0 var(--shadow-color);
+}
+
+/* RESPONSIVT DESIGN */
+@media (max-width: 1200px) {
+    .page-om-mig .first-name {
+        font-size: 7rem;
+    }
+    
+    .page-om-mig .last-name {
+        font-size: 8rem;
+    }
+    
+    .content-wrapper {
+        width: min(1000px, 92vw);
+    }
+}
+
+@media (max-width: 992px) {
+    .page-om-mig .first-name {
+        font-size: 5.5rem;
+    }
+    
+    .page-om-mig .last-name {
+        font-size: 6.5rem;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .journey-card,
+    .experience-card,
+    .reflection-card,
+    .skills-card {
+        grid-column: 1;
+    }
+    
+    .journey-card { grid-row: 1; }
+    .experience-card { grid-row: 2; margin-top: 0; }
+    .reflection-card { grid-row: 3; margin-top: 0; }
+    .skills-card { grid-row: 4; margin-top: 0; }
+}
+
+@media (max-width: 768px) {
+    .page-om-mig .first-name {
+        font-size: 4rem;
+    }
+    
+    .page-om-mig .last-name {
+        font-size: 5rem;
+    }
+    
+    .content-title {
+        font-size: 2rem;
+    }
+    
+    .content-card {
+        padding: 25px;
+    }
+    
+    .cv-carousel {
+        grid-template-columns: 50px 1fr 50px;
+        gap: 20px;
+    }
+    
+    .cv-carousel__btn {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    .cv-carousel__card {
+        grid-template-columns: 75px 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .cv-carousel__dot {
+        width: 65px;
+        height: 65px;
+        font-size: 1.5rem;
+    }
+    
+    .page-divider {
+        height: 80px;
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .skill-name {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-om-mig .topbar__logo img {
+        height: 40px !important;
+    }
+    
+    .page-om-mig .first-name {
+        font-size: 3rem;
+    }
+    
+    .page-om-mig .last-name {
+        font-size: 3.8rem;
+    }
+    
+    .om-mig-preview {
+        margin-top: 30px;
+    }
+    
+    .preview-card {
+        padding: 20px;
+    }
+    
+    .content-wrapper {
+        width: 95vw;
+    }
+    
+    .content-card {
+        padding: 20px;
+    }
+    
+    .cv-carousel {
+        grid-template-columns: 45px 1fr 45px;
+        gap: 15px;
+    }
+    
+    .cv-carousel__btn {
+        width: 45px;
+        height: 45px;
+        font-size: 26px;
+    }
+    
+    .cv-carousel__card {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .cv-carousel__dot {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+    
+    .page-divider {
+        height: 60px;
+    }
+}
+
+.page-om-mig .front-hero .text-section {
+  justify-content: flex-start;
+  padding-top: 90px;
+}
+/* Preview tekst: under navnet, venstre for billedet */
+.page-om-mig .om-mig-preview{
+  margin-top: 28px;
+  max-width: 520px;     /* holder den “pæn” */
+}
+
+/* gør kortet mere let (ikke for kasseagtigt) */
+.page-om-mig .preview-card{
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 2px solid var(--text);
+  padding: 18px 20px;
+  box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+
+.page-om-mig .image-section {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10vw;
+}
+
+.page-om-mig .portrait-frame {
+  width: 400px, 400px;
+  aspect-ratio: 1 / 1;
+}
+/* ===== Om-mig skal opføre sig som forsiden i toppen ===== */
+.page-om-mig .main-container{
+  display: block;         /* IKKE flex (layout.css) */
+  margin-top: 48px;       /* plads til topbar */
+  min-height: auto;
+}
+
+/* Sørg for hero fylder første skærm */
+.page-om-mig .front-hero{
+  min-height: calc(100vh - 48px);
+  position: relative;
+  overflow: hidden;
+}
+.page-divider {
+  width: 100vw;
+  margin-left: calc(50% - 50vw); /* 👈 tvinger den ud over container */
+  overflow: hidden;
+}
+
+.page-divider .divider-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Fjern luft mellem SVG og indhold */
+.page-om-mig .page-divider{
+  margin: 0;
+  padding: 0;
+  line-height: 0;     /* fjerner inline “gap” */
+}
+
+.page-om-mig .divider-svg{
+  display: block;     /* vigtigt for at undgå baseline-gap */
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* Træk sektionen op + fjern top-padding */
+.page-om-mig .om-mig-content-section{
+  margin-top: -430px;  /* justér tallet til du rammer perfekt */
+  padding-top: 0;     /* fjerner den store luft */
+}
